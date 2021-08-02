@@ -4,6 +4,8 @@
 
 Web chat application made using Express.js, React.js, Node.js and Socket.io.
 
+![Screenshot](https://github.com/Sapheir/JustGoChat/blob/main/example.PNG)
+
 # Features
 - Join rooms to chat with others
 - Change your username at any time
