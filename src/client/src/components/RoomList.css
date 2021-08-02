@@ -1,0 +1,50 @@
+.room-list {
+    width: 200px;
+    height: 100%;
+    padding-top: 80px;
+    border-right: 1px solid #e2dfdf;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.room-list p {
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+}
+
+.room-list ul {
+    width: 100%;
+    text-align: center;
+}
+
+.room-list li {
+    font-size: 1.25rem;
+    padding: 5px;
+    width: 100%;
+    border-top: solid 1px #e2dfdf;
+}
+
+.room-list li:last-child {
+    border-bottom: solid 1px #e2dfdf;
+}
+
+.room-list li:hover {
+    background-color: #e2dfdf;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+    .room-list {
+        width: 150px;
+    }
+
+    .room-list p {
+        font-size: 0.75rem;
+    }
+
+    .room-list li {
+        font-size: 1rem;
+    }
+}

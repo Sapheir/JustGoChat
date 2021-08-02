@@ -1,0 +1,49 @@
+.join {
+    padding: 75px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background-color: white;
+    border: 1px solid #e2dfdf;
+    border-radius: 15px;
+}
+
+.join form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.join label {
+    padding: 5px;
+}
+
+.join a {
+    display: block;
+    text-align: center;
+    background-color: rgb(83, 101, 204);
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.join input {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border-style: solid;
+}
+
+.join a:hover {
+    background-color: rgb(64, 80, 172);
+}
+
+@media only screen and (max-width: 550px) {
+    .join {
+        padding: 20px;
+    }
+}

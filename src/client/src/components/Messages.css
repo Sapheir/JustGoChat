@@ -1,0 +1,84 @@
+.messages {
+    margin: 100px 0;
+    padding-top: 20px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 1px #e2dfdf;
+    border-radius: 25px;
+    overflow-y: auto;
+}
+
+.messages > :first-child {
+    margin-top: auto !important;
+}
+
+
+.messages li {
+    display: inline-block;
+    margin: 20px 30px;
+    padding: 10px;
+    width: auto;
+    min-width: 200px;
+    max-width: 300px;
+    margin-top: 25px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.messages blockquote {
+    overflow-wrap: break-word;
+}
+
+.sent {
+    background-color: #82eefd;
+    align-self: flex-end;
+}
+
+.sent::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid #82eefd;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #82eefd;
+    border-bottom: 10px solid transparent;
+    right: -10px;
+    top: 0;
+}
+
+.received {
+    background-color: #63c5da;
+    align-self: flex-start;
+}
+
+.received::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #63c5da;
+    border-top: 10px solid #63c5da;
+    border-bottom: 10px solid transparent;
+    left: -10px;
+    top: 0;
+}
+
+.notification {
+    min-width: 100px;
+    background-color: #52b2bf;
+    text-align: center;
+    align-self: center;
+}
+
+.sent>cite, .notification>cite {
+    display: none;
+}
+.received>cite {
+    font-style: italic;
+    font-size: 0.8rem;
+}
